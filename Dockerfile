@@ -1,2 +1,5 @@
-FROM nginx:alpine
-COPY HW.py HW.py
+FROM node:alpine
+COPY . /app
+WORKDIR /app
+CMD node app.js
+
